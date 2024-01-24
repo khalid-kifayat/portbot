@@ -1,5 +1,6 @@
 from itertools import zip_longest
 import streamlit as st
+
 from streamlit_chat import message
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import (
@@ -51,43 +52,43 @@ Hello, I'm Khalid kifayat, Skillful Ai-Engineer with working experience in Cloud
 I also work as a proficient AI-chatbot developer in Google Dialogflow & Amazon Alexa with a keen eye for design, coding finesse, and a knack for creating intelligent chatbots using Rule based and Generative AI mechanism's, I bring a holistic approach to crafting dynamic and user-centric digital solutions
 ---
 **Education**
-1. Master's in Computer Sciences - Iqra University Karachi - 2004.
-2. Bachelor's in Computer Sciences - University of Peshawar - 2001
+* Master's in Computer Sciences - Iqra University Karachi - 2004.
+* Bachelor's in Computer Sciences - University of Peshawar - 2001
 ---
 **Skills**
-1. Git, GitHub, GitLab for version control and collaboration.
-2. SonarQube/JFrog for code testing.
-3. CI/CD: Jenkins ArgoCD, GitLab CI/CD for automation.
-4. Containerization: Docker and Kubernetes.
-5. Infrastructure as Code: Terraform, Ansible, Cloud-Formation
-6. Monitoring: AWS Cloud-Watch, Google Cloud Ops-Agent Monitoring, or tools like Prometheus Grafana.
-7. Security: IAM, Cloud Armor, Active Directory (AD)
+* Git, GitHub, GitLab for version control and collaboration.
+* SonarQube/JFrog for code testing.
+* CI/CD: Jenkins ArgoCD, GitLab CI/CD for automation.
+* Containerization: Docker and Kubernetes.
+* Infrastructure as Code: Terraform, Ansible, Cloud-Formation
+* Monitoring: AWS Cloud-Watch, Google Cloud Ops-Agent Monitoring, or tools like Prometheus Grafana.
+* Security: IAM, Cloud Armor, Active Directory (AD)
 ---
 **Cloud/DevOps Projects**
-1. CICD Pipeline for Java Application to deploy on Kubernetes Cluster using Jenkins.
-2. Automated Cl/CD Pipeline for Django Web Application using AWS, Docker, Jenkins and Kubernetes.
-3. Assimilation of VPC, NAT, API GATEWAY, Route53, Load Balancers & AWS Lambda along with DATA Migration from S3 to Glacier.
-4. Manage, Secure, Validate, Debug, Monitor & Prevent Misconfiguration of Kubernetes.
-5. MongoExpress/MongoDB Application deployment using Kubernetes.
-6. Deploying App using GiT-Maven-Jenkins & Tomcat Server.
+* CICD Pipeline for Java Application to deploy on Kubernetes Cluster using Jenkins.
+* Automated Cl/CD Pipeline for Django Web Application using AWS, Docker, Jenkins and Kubernetes.
+* Assimilation of VPC, NAT, API GATEWAY, Route53, Load Balancers & AWS Lambda along with DATA Migration from S3 to Glacier.
+* Manage, Secure, Validate, Debug, Monitor & Prevent Misconfiguration of Kubernetes.
+* MongoExpress/MongoDB Application deployment using Kubernetes.
+* Deploying App using GiT-Maven-Jenkins & Tomcat Server.
 ---
 **Ai Chatbot Projects:**
-1. https://chatbot-saylani.netlify.app/
-2. https://daraz-ai.netlify.app/ 
+* https://chatbot-saylani.netlify.app/
+* https://daraz-ai.netlify.app/ 
 ---
 **Communication skills**
 khalid kifayat possesses the following skills,
-1. Effective communicator
-2. Teamwork & Leadership
-3. Customer focused
-4. Active licensing
+* Effective communicator
+* Teamwork & Leadership
+* Customer focused
+* Active licensing
 ---
 **Job Experience**
-1. IT Technical Analyst (Pakistan Tobacco Company (PTC) l Location: Akora Khattak Factory, KPK, Pakistan (Client: HRSPL)) July 19 - Sept 20
-2. IT Officer, Rural Livelihood & Community Infrastructure Project (RLCIP) l Location: Peshawar, Pakistan , May 2013 - Mar 2018
-3. IT Admin, Area Development Project for Frontier Regions (ADP-FRs) l Location: Peshawar, Pakistan, July 2010 - Apr 2013
-4. IT Admin, South FATA Development Project (SFDP) l Location: Peshawar, Pakistan, June 2007 - June 2010
-5. Assistant Network Engineer, Warid Telecom (Telecom Company) l Location: Peshawar, Pakistan, Oct 2004 - May 2007
+* IT Technical Analyst (Pakistan Tobacco Company (PTC), Location: Akora Khattak Factory, KPK, Pakistan (Client: HRSPL)) July 19 - Sept 20
+* IT Officer, Rural Livelihood & Community Infrastructure Project (RLCIP), Location: Peshawar, Pakistan , May 2013 - Mar 2018
+* IT Admin, Area Development Project for Frontier Regions (ADP-FRs), Location: Peshawar, Pakistan, July 2010 - Apr 2013
+* IT Admin, South FATA Development Project (SFDP) , Location: Peshawar, Pakistan, June 2007 - June 2010
+* Assistant Network Engineer, Warid Telecom (Telecom Company) , Location: Peshawar, Pakistan, Oct 2004 - May 2007
 
 Thank you for choosing khalid kifayat Portfolio-Bot. If you have any questions or require assistance, feel free to ask! """
     )]
@@ -127,7 +128,7 @@ def submit():
 
 
 # Create a text input for user
-st.text_input('YOU: ', key='prompt_input', on_change=submit)
+st.text_input('Hi, I am AI Assistant - Ask anything about Khalid Kifayat: ', key='prompt_input', on_change=submit)
 
 
 if st.session_state.entered_prompt != "":
@@ -153,33 +154,3 @@ if st.session_state['generated']:
         message(st.session_state['past'][i],
                 is_user=True, key=str(i) + '_user')
 
-
-
-
-
-
-
-
-# import streamlit as st
-
-# # Set streamlit page configuration
-# st.set_page_config(page_title="Hope to Skill ChatBot")
-# st.title("AI Mentor")
-
-# # Create a sidebar for user information (optional)
-# st.sidebar.title("User Information")
-# st.sidebar.write("Name: Muhammad Abdullah")
-# st.sidebar.write("Age: 21")
-# st.sidebar.write("Location: Upper Dir, Khyber Pakhtunkhwa")
-# st.sidebar.write("Education: Computer Science")
-
-# # Create a text input for user
-# st.text_input('YOU: ', key='prompt_input')
-
-# # Display the chat history
-# if st.session_state['generated']:
-#     for i in range(len(st.session_state['generated'])-1, -1, -1):
-#         # Display AI response
-#         st.write(st.session_state["generated"][i])
-#         # Display user message
-#         st.write(st.session_state['past'][i])
