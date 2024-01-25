@@ -11,7 +11,7 @@ from langchain.schema import (
 )
 openapi_key = st.secrets["OPENAI_API_KEY"]
 
-# Set streamlit page configuration
+# Set streamlit page configuration 
 # Set streamlit page configuration
 st.set_page_config(page_title="Portfolio-Bot")
 st.title("Portfolio-Bot")
