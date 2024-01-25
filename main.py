@@ -14,7 +14,12 @@ openapi_key = st.secrets["OPENAI_API_KEY"]
 # Set streamlit page configuration
 st.set_page_config(page_title="Portfolio-Bot")
 st.title("Portfolio-Bot")
-
+st.markdown("""
+        <style>
+        #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+        </style>
+        """, unsafe_allow_html=True)
 # Initialize session state variables
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []  # Store AI generated responses
