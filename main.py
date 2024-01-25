@@ -1,7 +1,6 @@
 from itertools import zip_longest
 import streamlit as st
 
-
 from streamlit_chat import message
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import (
@@ -17,6 +16,7 @@ st.set_page_config(page_title="Portfolio-Bot")
 st.title("Portfolio-Bot")
 hide_streamlit_style = """
             <style>
+            [data-testid="stToolbar"] {visibility: hidden;}
             .reportview-container {
             margin-top: -2em;
         }
@@ -24,6 +24,7 @@ hide_streamlit_style = """
             .stDeployButton {display:none;}
             #stDecoration {display:none;}
             footer {visibility: hidden;}
+            div.embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
             header {visibility: hidden;}
             </style>
             """
