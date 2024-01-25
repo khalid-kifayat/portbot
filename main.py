@@ -17,6 +17,9 @@ st.title("Portfolio-Bot")
 st.markdown("""
         <style>
         #MainMenu {visibility: hidden;}
+        .st-emotion-cache-zq5wmm.ezrtsby0 {visibility: hidden;}
+        .st-emotion-cache-1p1m4ay e3g6aar0 {visibility: hidden;}
+        .st-emotion-cache-czk5ss e16jpq800 {visibility: hidden;}
             footer {visibility: hidden;}
         </style>
         """, unsafe_allow_html=True)
