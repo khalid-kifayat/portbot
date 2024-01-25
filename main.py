@@ -16,7 +16,12 @@ st.set_page_config(page_title="Portfolio-Bot")
 st.title("Portfolio-Bot")
 hide_streamlit_style = """
             <style>
+            .reportview-container {
+            margin-top: -2em;
+        }
             #MainMenu {visibility: hidden;}
+            .stDeployButton {display:none;}
+            #stDecoration {display:none;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
             </style>
