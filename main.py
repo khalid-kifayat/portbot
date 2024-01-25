@@ -1,6 +1,7 @@
 from itertools import zip_longest
 import streamlit as st
 
+
 from streamlit_chat import message
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import (
@@ -27,6 +28,7 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 # Initialize session state variables
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []  # Store AI generated responses
